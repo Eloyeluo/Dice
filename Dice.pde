@@ -1,17 +1,42 @@
+Die eloy;
+Die james;
+Die adam;
+Die noah;
+Die jason;
+Die jonas;
+Die sinn;
+Die michelle;
+Die john;
 void setup()
   {
       size(800,600);
       noLoop();
+    
   }
   void draw()
   {  
-      background(0, 100 , 100);
-    for(int y = 1; y <= 5000; y+=30){
-      for(int x = 1; x <= 5000; x+=30){
-       Die eloy = new Die(x ,y);
-       eloy.show();
-      }
-    }
+    background(10,300,0);
+    eloy = new Die(100,100);
+    james = new Die(100,150);
+    adam = new Die(100,200);
+    noah = new Die(100,250);
+    jason = new Die(100,300);
+    jonas = new Die(100,350);
+    sinn = new Die(100,400);
+    michelle = new Die(100,450);
+    john = new Die(100,500);
+    eloy.show();
+    james.show();
+    adam.show();
+    noah.show();
+    jason.show();
+    jonas.show();
+    sinn.show();
+    michelle.show();
+    john.show();
+    int total = eloy.randomInt + james.randomInt + adam.randomInt + noah.randomInt + jason.randomInt + jonas.randomInt + sinn.randomInt + michelle.randomInt + john.randomInt;
+    text("The total:", 400 , 75);
+    text(total, 400 , 100);
   }
   void mousePressed()
   {
